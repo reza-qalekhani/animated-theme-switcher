@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "Project-Id-Version: Animated Theme Switcher\n"
 "POT-Creation-Date: 2026-08-11 09:02+0330\n"
-"PO-Revision-Date: 2026-08-11 09:17+0330\n"
+"PO-Revision-Date: 2026-08-11 14:04+0330\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,11 +25,11 @@ msgstr "نمایش سوییچر"
 
 #: includes/admin.php:66
 msgid "Transition template"
-msgstr "انیمیشن تغییر حالت"
+msgstr "انیمیشن جابجایی"
 
 #: includes/admin.php:74
 msgid "Button location"
-msgstr "محل سوییچ"
+msgstr "محل قرارگیری سوییچ"
 
 #: includes/admin.php:82
 msgid "Navigation menu"
@@ -37,7 +37,7 @@ msgstr "فهرست مدنظر"
 
 #: includes/admin.php:91
 msgid "Dark-mode colors"
-msgstr "رنگ‌های حالت تیره"
+msgstr "پالت رنگی حالت تیره"
 
 #: includes/admin.php:114
 msgid "GIF templates load their mask animation from Tenor."
@@ -125,7 +125,7 @@ msgstr "سوییچر حالت رنگی"
 
 #: includes/admin.php:226
 msgid "Transition Theme Switcher"
-msgstr "تنظیمات سوییچر حالت رنگی با انیمیشن"
+msgstr "تنظیمات افزونه انیمیشن دارک مود"
 
 #: includes/admin.php:227
 msgid "Choose the animation, button location, and dark-mode palette."
@@ -309,7 +309,7 @@ msgstr "Glitch"
 
 #. Plugin Name of the plugin/theme
 msgid "Animated Theme Switcher"
-msgstr "سوییچ حالت رنگی با انیمیشن"
+msgstr "انیمیشن دارک مود وردپرس"
 
 #. Plugin URI of the plugin/theme
 msgid "https://byreza.net/wordpress/animated-theme-switcher-plugin/"
