@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>نمایش ترنزیشن‌های تغییر پوسته</title>
+    <link rel="stylesheet" href="../assets/css/theme-switcher.css" />
+    <style>
+      :root {
+        color-scheme: light;
+        --page: #f5f1e8;
+        --surface: #fffdf8;
+        --text: #1d2520;
+        --muted: #667068;
+        --border: #d9d5ca;
+        --accent: #34785a;
+        --wptts-background: #111814;
+        --wptts-surface: #1b241f;
+        --wptts-text: #eef4ef;
+        --wptts-muted: #9eaaa1;
+        --wptts-border: #35423a;
+        --wptts-link: #83d6aa;
+        font-family: Tahoma, Arial, sans-serif;
+      }
+
+      @font-face {
+        font-family: vazirmatn;
+        src: url(./fonts/vazirmatn-variable.woff2) format("woff2-variations");
+        font-weight: 100 900;
+        font-style: normal;
+      }
+
+      :root[data-wptts-theme="dark"] {
+        color-scheme: dark;
+        --page: var(--wptts-background);
+        --surface: var(--wptts-surface);
+        --text: var(--wptts-text);
+        --muted: var(--wptts-muted);
+        --border: var(--wptts-border);
+        --accent: var(--wptts-link);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        color: var(--text);
+        background: var(--page);
+        font-family: vazirmatn, sans-serif;
+      }
+
+      .shell {
+        width: min(70rem, calc(100% - 2rem));
+        margin: auto;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.25rem 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-weight: 750;
+        white-space: nowrap;
+      }
+
+      .brand::before {
+        width: 1.1rem;
+        height: 1.1rem;
+        content: "";
+        background: var(--accent);
+        border-radius: 50%;
+        box-shadow: 0.45rem -0.35rem 0 var(--page);
+      }
+
+      nav ul {
+        display: flex;
+        gap: 1.25rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav a,
+      footer a {
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      nav a:hover,
+      footer a:hover {
+        color: var(--accent);
+      }
+
+      .eyebrow {
+        margin: 0 0 0.6rem;
+        color: var(--accent);
+        font-weight: 750;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 3rem;
+      }
+
+      h2 {
+        margin: 0 0 0.4rem;
+        font-size: 1.1rem;
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      main {
+        padding: clamp(3rem, 8vw, 7rem) 0;
+      }
+
+      .intro {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: end;
+        gap: 1rem;
+      }
+
+      .controls {
+        padding: 1.25rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 1.25rem;
+        box-shadow: 0 1rem 3rem rgb(0 0 0 / 8%);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+
+      select {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        color: var(--text);
+        background: var(--page);
+        border: 1px solid var(--border);
+        border-radius: 0.7rem;
+        font: inherit;
+      }
+
+      .action {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        margin-top: 1rem;
+      }
+
+      .action .wptts-toggle {
+        flex: 0 0 auto;
+      }
+
+      .action p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: clamp(3rem, 8vw, 7rem);
+      }
+
+      article {
+        padding: 1.5rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+      }
+
+      article h2 {
+        display: inline;
+        margin-inline-start: 1rem;
+      }
+
+      article span {
+        display: inline-block;
+        line-height: 2rem;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        color: var(--page);
+        background: var(--accent);
+        border-radius: 50%;
+        font-weight: 800;
+      }
+
+      article p {
+        margin-bottom: 0;
+      }
+
+      .notice {
+        display: none;
+        margin-top: 2rem;
+        padding: 0.8rem 1rem;
+        border: 1px solid #d79534;
+        border-radius: 0.7rem;
+        background: #d7953420;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.5rem 0 2rem;
+        color: var(--muted);
+        border-top: 1px solid var(--border);
+        font-size: 0.85rem;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      @media (max-width: 700px) {
+        .intro,
+        .cards {
+          grid-template-columns: 1fr;
+        }
+        .controls {
+          margin-top: 1rem;
+        }
+        header {
+          flex-wrap: wrap;
+        }
+        nav {
+          width: 100%;
+          overflow-x: auto;
+        }
+        footer {
+          flex-direction: column;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .motion-note {
+          display: inline;
+        }
+      }
+    </style>
+    <script>
+      window.wpttsThemeSwitcher = {
+        lightLabel: "تغییر به پوسته روشن",
+        darkLabel: "تغییر به پوسته تیره",
+        transition: "circle-reveal",
+      };
+    </script>
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <div class="brand">انیمیشن دارک مود وردپرس</div>
+        <nav aria-label="منوی اصلی">
+          <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#features">ویژگی‌ها</a></li>
+            <li><a href="#">مستندات</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="intro">
+          <div>
+            <p class="eyebrow">۳۶ انیمیشن، تنها با یک کلیک</p>
+            <h1>حال‌وهوای صفحه را عوض کنید.</h1>
+            <p>یک افکت انتخاب کنید، سپس با دکمه خورشید و ماه تغییر پوسته را ببینید.</p>
+          </div>
+
+          <div class="controls">
+            <label for="transition">استایل تغییر تم</label>
+            <select id="transition" dir="ltr">
+              <optgroup label="Simple">
+                <option value="fade">Fade</option>
+                <option value="slide">Slide</option>
+                <option value="scale">Scale</option>
+                <option value="rotate">Rotate</option>
+                <option value="zoom">Zoom</option>
+              </optgroup>
+              <optgroup label="3D">
+                <option value="flip">Flip</option>
+                <option value="cube">Cube</option>
+                <option value="skew-slide">Skew Slide</option>
+                <option value="page-curl">Page Curl</option>
+                <option value="accordion">Accordion</option>
+                <option value="doorway">Doorway</option>
+                <option value="book-flip">Book Flip</option>
+                <option value="fold">Fold</option>
+              </optgroup>
+              <optgroup label="Composite">
+                <option value="blur">Blur</option>
+                <option value="diagonal-wipe">Diagonal Wipe</option>
+                <option value="venetian-blinds-theme">Venetian Blinds</option>
+                <option value="wave-reveal-theme">Wave Reveal</option>
+                <option value="curtain">Curtain</option>
+                <option value="roll">Roll</option>
+                <option value="glitch">Glitch</option>
+              </optgroup>
+              <optgroup label="Mask Reveals">
+                <option value="circle-reveal">Circle Reveal</option>
+                <option value="circle-blur">Circle Blur</option>
+                <option value="polygon-reveal">Polygon Reveal</option>
+                <option value="gif-frog">GIF Frog</option>
+                <option value="gif-penguin">GIF Penguin</option>
+                <option value="gif-cat">GIF Cat</option>
+                <option value="gif-michael-jackson">GIF Michael Jackson</option>
+                <option value="gif-deadpool">GIF Deadpool</option>
+                <option value="gif-chika">GIF Chika</option>
+                <option value="gif-hakari-dance">GIF Hakari Dance</option>
+                <option value="star-reveal">Star Reveal</option>
+                <option value="heart-reveal">Heart Reveal</option>
+                <option value="checkerboard-reveal">Checkerboard Reveal</option>
+                <option value="ripple-reveal">Ripple Reveal</option>
+                <option value="spiral-reveal">Spiral Reveal</option>
+                <option value="iris-wipe-page">Iris Wipe</option>
+              </optgroup>
+            </select>
+
+            <div class="action">
+              <button class="wptts-toggle" type="button" data-wptts-toggle aria-label="تغییر پوسته رنگی" aria-pressed="false">
+                <svg class="wptts-icon wptts-icon--sun" aria-hidden="true" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41" />
+                </svg>
+                <svg class="wptts-icon wptts-icon--moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" /></svg>
+              </button>
+              <p>برای پیش‌نمایش <strong id="selected-name" dir="ltr">Circle Reveal</strong> کلیک کنید.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="cards" id="features" aria-label="محتوای نمونه">
+          <article>
+            <span>۱</span>
+            <h2>بومی مرورگر</h2>
+            <p>با استفاده از رابط View Transitions مرورگر اجرا می‌شود.</p>
+          </article>
+          <article>
+            <span>۲</span>
+            <h2>دسترس‌پذیر</h2>
+            <p>در صورت ترجیح حرکت کمتر، پوسته بدون پویانمایی تغییر می‌کند.</p>
+          </article>
+          <article>
+            <span>۳</span>
+            <h2>آماده برای پوسته</h2>
+            <p>همه افکت‌های موجود را روی یک چیدمان واقعی امتحان کنید.</p>
+          </article>
+        </section>
+
+        <p class="notice" id="support-note" role="status">مرورگر شما از View Transitions پشتیبانی نمی‌کند؛ پوسته بدون پویانمایی تغییر خواهد کرد.</p>
+        <p class="notice motion-note" role="status">حرکت کمتر در دستگاه شما فعال است؛ پوسته بدون پویانمایی تغییر خواهد کرد.</p>
+      </main>
+
+      <footer id="about">
+        <p>© ۲۰۲۶ <a href="https://byreza.net">رضا قلعه‌خانی</a>. تمامی حقوق محفوظ است.</p>
+        <p><a href="https://github.com/reza-qalekhani/animated-theme-switcher">مشاهده پروژه در گیت‌هاب</a></p>
+      </footer>
+    </div>
+
+    <script src="../assets/js/theme-switcher.js"></script>
+    <script>
+      var picker = document.getElementById("transition");
+      var selectedName = document.getElementById("selected-name");
+
+      picker.addEventListener("change", function () {
+        document.documentElement.dataset.wpttsTransition = picker.value;
+        selectedName.textContent = picker.options[picker.selectedIndex].text;
+      });
+
+      if (typeof document.startViewTransition !== "function") {
+        document.getElementById("support-note").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
