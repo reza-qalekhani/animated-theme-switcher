@@ -162,7 +162,7 @@ function wptts_add_menu_toggle($items, $args) {
 add_filter('wp_nav_menu_items', 'wptts_add_menu_toggle', 10, 2);
 
 /**
- * Allow placement with [transition_theme_switcher].
+ * Allow placement with [animated_theme_switcher].
  *
  * @return string
  */
@@ -171,4 +171,4 @@ function wptts_shortcode() {
 
   return wptts_button_markup();
 }
-add_shortcode('transition_theme_switcher', 'wptts_shortcode');
+add_shortcode('animated_theme_switcher', 'wptts_shortcode');

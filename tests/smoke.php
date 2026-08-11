@@ -109,7 +109,7 @@ $location_menu_args = (object) array('menu' => 0, 'theme_location' => 'primary')
 if (
   'wptts_enqueue_assets' !== ($registered_actions['wp_enqueue_scripts'] ?? null) ||
   'wptts_register_settings' !== ($registered_actions['admin_init'] ?? null) ||
-  'wptts_shortcode' !== ($registered_shortcodes['transition_theme_switcher'] ?? null) ||
+  'wptts_shortcode' !== ($registered_shortcodes['animated_theme_switcher'] ?? null) ||
   false === strpos($markup, 'data-wptts-toggle') ||
   ! in_array('wptts-generic-filter', $classes, true) ||
   36 !== count(array_unique($slugs)) ||

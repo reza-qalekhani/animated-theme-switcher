@@ -76,7 +76,7 @@ Select **In navigation menu**, then select the desired menu in the **Navigation 
 Add the shortcode to a post, page, widget, or template:
 
 ```text
-[transition_theme_switcher]
+[animated_theme_switcher]
 ```
 
 The shortcode renders an inline button and suppresses the automatic floating button on that page.
@@ -84,7 +84,7 @@ The shortcode renders an inline button and suppresses the automatic floating but
 Use it in a PHP template with:
 
 ```php
-<?php echo do_shortcode( '[transition_theme_switcher]' ); ?>
+<?php echo do_shortcode( '[animated_theme_switcher]' ); ?>
 ```
 
 ### Hide the automatic floating button
