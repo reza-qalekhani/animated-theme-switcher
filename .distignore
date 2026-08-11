@@ -19,4 +19,4 @@ composer.lock
 
 assets/scss/
 languages/animated-theme-switcher.pot
-demo/
+docs/
