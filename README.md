@@ -2,6 +2,8 @@
 
 An animated, accessible light/dark theme switcher for WordPress, created by [Reza Qalekhani](https://byreza.net). This plugin is inspired by [Transition Kit](https://github.com/AbdullahMukadam/Transition-kit) and independently adapted for WordPress. It uses the browser's native View Transitions API and switches themes instantly when the selected animation is unsupported or the visitor prefers reduced motion.
 
+[![View Live Demo](https://img.shields.io/badge/View_Live_Demo-34785a?style=for-the-badge)](https://byreza.ir/animated-theme-switcher/)
+
 The visitor's choice is saved in `localStorage`. On the first visit, the plugin follows the operating system's color scheme.
 
 ## Features
