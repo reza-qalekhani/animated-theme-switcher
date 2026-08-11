@@ -1,6 +1,6 @@
 {
   "name": "animated-theme-switcher",
-  "version": "1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "sass assets/scss/admin.scss assets/css/admin.css --style=compressed --no-source-map && sass assets/scss/theme-switcher.scss assets/css/theme-switcher.css --style=compressed --no-source-map",

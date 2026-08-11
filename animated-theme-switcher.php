@@ -4,7 +4,7 @@
  * Plugin Name:       Animated Theme Switcher
  * Plugin URI:        https://byreza.net/wordpress/animated-theme-switcher-plugin/
  * Description:       Adds an animated, accessible light/dark theme switcher to any WordPress site.
- * Version:           1.0
+ * Version:           1.0.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Reza Qalekhani
