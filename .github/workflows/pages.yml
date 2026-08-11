@@ -32,9 +32,9 @@ jobs:
       - name: Prepare demo
         run: |
           mkdir _site
-          cp docs/index.html _site/index.html
+          cp -R docs/. _site/
           cp -R assets _site/assets
-          sed -i 's#../assets/#assets/#g' _site/index.html
+          sed -i 's#\.\./assets/#/animated-theme-switcher/assets/#g; s#\./fonts/#/animated-theme-switcher/fonts/#g' _site/index.html
 
       - uses: actions/configure-pages@v5
 
