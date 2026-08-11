@@ -1,0 +1,328 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"Project-Id-Version: Animated Theme Switcher\n"
+"POT-Creation-Date: 2026-08-11 09:02+0330\n"
+"PO-Revision-Date: 2026-08-11 09:17+0330\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: transition-theme-switcher.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: fa_IR\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin.php:59
+msgid "Switcher display"
+msgstr "نمایش سوییچر"
+
+#: includes/admin.php:66
+msgid "Transition template"
+msgstr "انیمیشن تغییر حالت"
+
+#: includes/admin.php:74
+msgid "Button location"
+msgstr "محل سوییچ"
+
+#: includes/admin.php:82
+msgid "Navigation menu"
+msgstr "فهرست مدنظر"
+
+#: includes/admin.php:91
+msgid "Dark-mode colors"
+msgstr "رنگ‌های حالت تیره"
+
+#: includes/admin.php:114
+msgid "GIF templates load their mask animation from Tenor."
+msgstr "استایل‌های GIF انیمیشن ماسک خود را از Tenor لود می‌کنند."
+
+#: includes/admin.php:124
+msgid "Floating bottom"
+msgstr "شناور در پایین"
+
+#: includes/admin.php:125
+msgid "Floating top"
+msgstr "شناور در بالا"
+
+#: includes/admin.php:126
+msgid "In navigation menu"
+msgstr "داخل فهرست"
+
+#: includes/admin.php:134
+msgid "Choose the exact menu in the field below when using menu placement."
+msgstr "از فیلد پایین مشخص کنید که دکمه سوییچر حالت رنگی به کدام فهرست سایت اضافه شود."
+
+#: includes/admin.php:146
+msgid "Select a menu"
+msgstr "انتخاب فهرست"
+
+#: includes/admin.php:152
+msgid "No classic navigation menus were found."
+msgstr "هیچ فهرست کلاسیکی یافت نشد."
+
+#: includes/admin.php:164
+msgid "Background"
+msgstr "پس‌زمینه"
+
+#: includes/admin.php:165
+msgid "Main page and primary content backgrounds."
+msgstr "رنگ پس‌زمینه اصلی و بدنه صفحه را مشخص می‌کند."
+
+#: includes/admin.php:168
+msgid "Surface"
+msgstr "سطح"
+
+#: includes/admin.php:169
+msgid "Widgets, sidebars, form fields, tables, code blocks, and comments."
+msgstr "رنگ المان‌هایی مانند ابزارک‌ها، سایدبارها، فیلدهای فرم، جدول‌ها، بلوک‌های کد و دیدگاه‌ها را مشخص می‌کند."
+
+#: includes/admin.php:172
+msgid "Text"
+msgstr "متن اصلی"
+
+#: includes/admin.php:173
+msgid "Headings, paragraphs, labels, lists, and default body text."
+msgstr "رنگ متن هدینگ‌ها، پاراگراف‌ها، برچسب‌ها، لیست‌ها و پیش‌فرض متن‌های body را مشخص می‌کند."
+
+#: includes/admin.php:176
+msgid "Muted text"
+msgstr "متن ثانویه"
+
+#: includes/admin.php:177
+msgid "Post dates, author details, metadata, and other secondary text."
+msgstr "رنگ متن تاریخ‌ها، اطلاعات نویسنده، متاداده‌ها و سایرین متون ثانویه را مشخص می‌کند."
+
+#: includes/admin.php:180
+msgid "Border"
+msgstr "بوردرها"
+
+#: includes/admin.php:181
+msgid "Form controls, tables, widgets, comments, and horizontal rules."
+msgstr "رنگ بوردر فیلدهای فرم، جدول‌ها، ابزارک‌ها، دیدگاه‌ها و خطوط افقی را مشخص می‌کند."
+
+#: includes/admin.php:184
+msgid "Link"
+msgstr "لینک‌ها"
+
+#: includes/admin.php:185
+msgid "Standard text links; button colors remain controlled by the active theme."
+msgstr "رنگ لینک‌های متنی را مشخص می‌کند. رنگ دکمه‌ها از پوسته فعال تبعیت می‌کند."
+
+#: includes/admin.php:189
+msgid "These colors are used by the plugin's generic dark palette."
+msgstr "این رنگ‌ها برای حالت تیره افزونه استفاده می‌شوند."
+
+#: includes/admin.php:208 includes/admin.php:209
+msgid "Theme Switcher"
+msgstr "سوییچر حالت رنگی"
+
+#: includes/admin.php:226
+msgid "Transition Theme Switcher"
+msgstr "تنظیمات سوییچر حالت رنگی با انیمیشن"
+
+#: includes/admin.php:227
+msgid "Choose the animation, button location, and dark-mode palette."
+msgstr "نوع انیمیشن، محل دکمه سوییچر و پالت رنگی حالت تیره را تنظیم کنید."
+
+#: includes/admin.php:248
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: includes/frontend.php:37
+msgid "Switch to light theme"
+msgstr "تغییر به حالت روشن"
+
+#: includes/frontend.php:38
+msgid "Switch to dark theme"
+msgstr "تغییر به حالت تیره"
+
+#: includes/frontend.php:99
+msgid "Switch color theme"
+msgstr "تغییر مود رنگی"
+
+#: includes/transitions.php:18
+msgid "Mask reveals"
+msgstr "- انیمیشن‌های Mask شده"
+
+#: includes/transitions.php:19
+msgid "Circle Reveal"
+msgstr "Circle Reveal"
+
+#: includes/transitions.php:20
+msgid "Circle Blur"
+msgstr "Circle Blur"
+
+#: includes/transitions.php:21
+msgid "Polygon Reveal"
+msgstr "Polygon Reveal"
+
+#: includes/transitions.php:22
+msgid "GIF Frog"
+msgstr "GIF Frog"
+
+#: includes/transitions.php:23
+msgid "GIF Penguin"
+msgstr "GIF Penguin"
+
+#: includes/transitions.php:24
+msgid "GIF Cat"
+msgstr "GIF Cat"
+
+#: includes/transitions.php:25
+msgid "GIF Michael Jackson"
+msgstr "GIF Michael Jackson"
+
+#: includes/transitions.php:26
+msgid "GIF Deadpool"
+msgstr "GIF Deadpool"
+
+#: includes/transitions.php:27
+msgid "GIF Chika"
+msgstr "GIF Chika"
+
+#: includes/transitions.php:28
+msgid "GIF Hakari Dance"
+msgstr "GIF Hakari Dance"
+
+#: includes/transitions.php:29
+msgid "Star Reveal"
+msgstr "Star Reveal"
+
+#: includes/transitions.php:30
+msgid "Heart Reveal"
+msgstr "Heart Reveal"
+
+#: includes/transitions.php:31
+msgid "Checkerboard Reveal"
+msgstr "Checkerboard Reveal"
+
+#: includes/transitions.php:32
+msgid "Ripple Reveal"
+msgstr "Ripple Reveal"
+
+#: includes/transitions.php:33
+msgid "Spiral Reveal"
+msgstr "Spiral Reveal"
+
+#: includes/transitions.php:34
+msgid "Iris Wipe"
+msgstr "Iris Wipe"
+
+#: includes/transitions.php:36
+msgid "Simple"
+msgstr "- انیمیشن‌های ساده"
+
+#: includes/transitions.php:37
+msgid "Fade"
+msgstr "Fade"
+
+#: includes/transitions.php:38
+msgid "Slide"
+msgstr "Slide"
+
+#: includes/transitions.php:39
+msgid "Scale"
+msgstr "Scale"
+
+#: includes/transitions.php:40
+msgid "Rotate"
+msgstr "Rotate"
+
+#: includes/transitions.php:41
+msgid "Zoom"
+msgstr "Zoom"
+
+#: includes/transitions.php:43
+msgid "3D"
+msgstr "- انیمیشن‌های سه‌بعدی"
+
+#: includes/transitions.php:44
+msgid "Flip"
+msgstr "Flip"
+
+#: includes/transitions.php:45
+msgid "Cube"
+msgstr "Cube"
+
+#: includes/transitions.php:46
+msgid "Skew Slide"
+msgstr "Skew Slide"
+
+#: includes/transitions.php:47
+msgid "Page Curl"
+msgstr "Page Curl"
+
+#: includes/transitions.php:48
+msgid "Accordion"
+msgstr "Accordion"
+
+#: includes/transitions.php:49
+msgid "Doorway"
+msgstr "Doorway"
+
+#: includes/transitions.php:50
+msgid "Book Flip"
+msgstr "Book Flip"
+
+#: includes/transitions.php:51
+msgid "Fold"
+msgstr "Fold"
+
+#: includes/transitions.php:53
+msgid "Composite"
+msgstr "- انیمیشن‌های ترکیبی"
+
+#: includes/transitions.php:54
+msgid "Blur"
+msgstr "Blur"
+
+#: includes/transitions.php:55
+msgid "Diagonal Wipe"
+msgstr "Diagonal Wipe"
+
+#: includes/transitions.php:56
+msgid "Venetian Blinds"
+msgstr "Venetian Blinds"
+
+#: includes/transitions.php:57
+msgid "Wave Reveal"
+msgstr "Wave Reveal"
+
+#: includes/transitions.php:58
+msgid "Curtain"
+msgstr "Curtain"
+
+#: includes/transitions.php:59
+msgid "Roll"
+msgstr "Roll"
+
+#: includes/transitions.php:60
+msgid "Glitch"
+msgstr "Glitch"
+
+#. Plugin Name of the plugin/theme
+msgid "Animated Theme Switcher"
+msgstr "سوییچ حالت رنگی با انیمیشن"
+
+#. Plugin URI of the plugin/theme
+msgid "https://byreza.net/wordpress/animated-theme-switcher-plugin/"
+msgstr "https://byreza.net/wordpress/animated-theme-switcher-plugin/"
+
+#. Description of the plugin/theme
+msgid "Adds an animated, accessible light/dark theme switcher to any WordPress site."
+msgstr "این افزونه، یک دکمه سوییچر حالت dark/light را به همراه انیمیشن‌های جابجایی جذاب به هر سایت وردپرسی اضافه می‌کند."
+
+#. Author of the plugin/theme
+msgid "Reza Qalekhani"
+msgstr "رضا قلعه‌خانی"
+
+#. Author URI of the plugin/theme
+msgid "https://byreza.net"
+msgstr "https://byreza.net"

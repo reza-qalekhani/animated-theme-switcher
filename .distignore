@@ -1,0 +1,21 @@
+# Version control
+
+.git/
+.github/
+.gitignore
+.distignore
+
+# Environment & Tests
+
+vendor/
+node_modules/
+tests/
+package.json
+package-lock.json
+composer.json
+composer.lock
+
+# Other files
+
+assets/scss/
+languages/animated-theme-switcher.pot

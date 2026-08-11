@@ -1,0 +1,332 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Animated Theme Switcher\n"
+"POT-Creation-Date: 2026-08-11 09:02+0330\n"
+"PO-Revision-Date: 2026-08-11 09:02+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: transition-theme-switcher.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin.php:59
+msgid "Switcher display"
+msgstr ""
+
+#: includes/admin.php:66
+msgid "Transition template"
+msgstr ""
+
+#: includes/admin.php:74
+msgid "Button location"
+msgstr ""
+
+#: includes/admin.php:82
+msgid "Navigation menu"
+msgstr ""
+
+#: includes/admin.php:91
+msgid "Dark-mode colors"
+msgstr ""
+
+#: includes/admin.php:114
+msgid "GIF templates load their mask animation from Tenor."
+msgstr ""
+
+#: includes/admin.php:124
+msgid "Floating bottom"
+msgstr ""
+
+#: includes/admin.php:125
+msgid "Floating top"
+msgstr ""
+
+#: includes/admin.php:126
+msgid "In navigation menu"
+msgstr ""
+
+#: includes/admin.php:134
+msgid "Choose the exact menu in the field below when using menu placement."
+msgstr ""
+
+#: includes/admin.php:146
+msgid "Select a menu"
+msgstr ""
+
+#: includes/admin.php:152
+msgid "No classic navigation menus were found."
+msgstr ""
+
+#: includes/admin.php:164
+msgid "Background"
+msgstr ""
+
+#: includes/admin.php:165
+msgid "Main page and primary content backgrounds."
+msgstr ""
+
+#: includes/admin.php:168
+msgid "Surface"
+msgstr ""
+
+#: includes/admin.php:169
+msgid "Widgets, sidebars, form fields, tables, code blocks, and comments."
+msgstr ""
+
+#: includes/admin.php:172
+msgid "Text"
+msgstr ""
+
+#: includes/admin.php:173
+msgid "Headings, paragraphs, labels, lists, and default body text."
+msgstr ""
+
+#: includes/admin.php:176
+msgid "Muted text"
+msgstr ""
+
+#: includes/admin.php:177
+msgid "Post dates, author details, metadata, and other secondary text."
+msgstr ""
+
+#: includes/admin.php:180
+msgid "Border"
+msgstr ""
+
+#: includes/admin.php:181
+msgid "Form controls, tables, widgets, comments, and horizontal rules."
+msgstr ""
+
+#: includes/admin.php:184
+msgid "Link"
+msgstr ""
+
+#: includes/admin.php:185
+msgid ""
+"Standard text links; button colors remain controlled by the active theme."
+msgstr ""
+
+#: includes/admin.php:189
+msgid "These colors are used by the plugin's generic dark palette."
+msgstr ""
+
+#: includes/admin.php:208 includes/admin.php:209
+msgid "Theme Switcher"
+msgstr ""
+
+#: includes/admin.php:226
+msgid "Transition Theme Switcher"
+msgstr ""
+
+#: includes/admin.php:227
+msgid "Choose the animation, button location, and dark-mode palette."
+msgstr ""
+
+#: includes/admin.php:248
+msgid "Settings"
+msgstr ""
+
+#: includes/frontend.php:37
+msgid "Switch to light theme"
+msgstr ""
+
+#: includes/frontend.php:38
+msgid "Switch to dark theme"
+msgstr ""
+
+#: includes/frontend.php:99
+msgid "Switch color theme"
+msgstr ""
+
+#: includes/transitions.php:18
+msgid "Mask reveals"
+msgstr ""
+
+#: includes/transitions.php:19
+msgid "Circle Reveal"
+msgstr ""
+
+#: includes/transitions.php:20
+msgid "Circle Blur"
+msgstr ""
+
+#: includes/transitions.php:21
+msgid "Polygon Reveal"
+msgstr ""
+
+#: includes/transitions.php:22
+msgid "GIF Frog"
+msgstr ""
+
+#: includes/transitions.php:23
+msgid "GIF Penguin"
+msgstr ""
+
+#: includes/transitions.php:24
+msgid "GIF Cat"
+msgstr ""
+
+#: includes/transitions.php:25
+msgid "GIF Michael Jackson"
+msgstr ""
+
+#: includes/transitions.php:26
+msgid "GIF Deadpool"
+msgstr ""
+
+#: includes/transitions.php:27
+msgid "GIF Chika"
+msgstr ""
+
+#: includes/transitions.php:28
+msgid "GIF Hakari Dance"
+msgstr ""
+
+#: includes/transitions.php:29
+msgid "Star Reveal"
+msgstr ""
+
+#: includes/transitions.php:30
+msgid "Heart Reveal"
+msgstr ""
+
+#: includes/transitions.php:31
+msgid "Checkerboard Reveal"
+msgstr ""
+
+#: includes/transitions.php:32
+msgid "Ripple Reveal"
+msgstr ""
+
+#: includes/transitions.php:33
+msgid "Spiral Reveal"
+msgstr ""
+
+#: includes/transitions.php:34
+msgid "Iris Wipe"
+msgstr ""
+
+#: includes/transitions.php:36
+msgid "Simple"
+msgstr ""
+
+#: includes/transitions.php:37
+msgid "Fade"
+msgstr ""
+
+#: includes/transitions.php:38
+msgid "Slide"
+msgstr ""
+
+#: includes/transitions.php:39
+msgid "Scale"
+msgstr ""
+
+#: includes/transitions.php:40
+msgid "Rotate"
+msgstr ""
+
+#: includes/transitions.php:41
+msgid "Zoom"
+msgstr ""
+
+#: includes/transitions.php:43
+msgid "3D"
+msgstr ""
+
+#: includes/transitions.php:44
+msgid "Flip"
+msgstr ""
+
+#: includes/transitions.php:45
+msgid "Cube"
+msgstr ""
+
+#: includes/transitions.php:46
+msgid "Skew Slide"
+msgstr ""
+
+#: includes/transitions.php:47
+msgid "Page Curl"
+msgstr ""
+
+#: includes/transitions.php:48
+msgid "Accordion"
+msgstr ""
+
+#: includes/transitions.php:49
+msgid "Doorway"
+msgstr ""
+
+#: includes/transitions.php:50
+msgid "Book Flip"
+msgstr ""
+
+#: includes/transitions.php:51
+msgid "Fold"
+msgstr ""
+
+#: includes/transitions.php:53
+msgid "Composite"
+msgstr ""
+
+#: includes/transitions.php:54
+msgid "Blur"
+msgstr ""
+
+#: includes/transitions.php:55
+msgid "Diagonal Wipe"
+msgstr ""
+
+#: includes/transitions.php:56
+msgid "Venetian Blinds"
+msgstr ""
+
+#: includes/transitions.php:57
+msgid "Wave Reveal"
+msgstr ""
+
+#: includes/transitions.php:58
+msgid "Curtain"
+msgstr ""
+
+#: includes/transitions.php:59
+msgid "Roll"
+msgstr ""
+
+#: includes/transitions.php:60
+msgid "Glitch"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Animated Theme Switcher"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://byreza.net/wordpress/animated-theme-switcher-plugin/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds an animated, accessible light/dark theme switcher to any WordPress site."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Reza Qalekhani"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://byreza.net"
+msgstr ""

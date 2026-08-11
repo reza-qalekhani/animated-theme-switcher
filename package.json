@@ -1,0 +1,13 @@
+{
+  "name": "animated-theme-switcher",
+  "version": "1.0",
+  "private": true,
+  "scripts": {
+    "build": "sass assets/scss/admin.scss assets/css/admin.css --style=compressed --no-source-map && sass assets/scss/theme-switcher.scss assets/css/theme-switcher.css --style=compressed --no-source-map",
+    "watch": "sass --watch assets/scss:assets/css",
+    "test": "npm run build && node --check assets/js/theme-switcher.js && node --check assets/js/admin.js && php -l animated-theme-switcher.php && php -l includes/i18n.php && php -l includes/transitions.php && php -l includes/options.php && php -l includes/frontend.php && php -l includes/admin.php && php tests/smoke.php"
+  },
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}
